@@ -1,0 +1,18 @@
+{
+  "lock": false,
+  "imports": {
+    "$fresh/": "https://deno.land/x/fresh@1.7.3/",
+    "preact": "https://esm.sh/preact@10.26.4",
+    "preact/": "https://esm.sh/preact@10.26.4/",
+    "@preact/signals": "https://esm.sh/@preact/signals@1.3.2"
+  },
+  "tasks": {
+    "start": "deno run -A --watch=static/,routes/,components/,islands/ dev.ts",
+    "check": "deno fmt --check && deno lint && deno check **/*.ts **/*.tsx",
+    "fmt": "deno fmt"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  }
+}
