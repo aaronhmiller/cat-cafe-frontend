@@ -1,6 +1,6 @@
 import type { Handlers } from "$fresh/server.ts";
 
-const apiUrl = Deno.env.get("CAT_CAFE_API_URL") ?? "http://localhost:8080";
+const apiUrl = Deno.env.get("CAT_CAFE_API_URL") ?? "http://localhost:8444";
 
 export const handler: Handlers = {
   async GET(req) {
