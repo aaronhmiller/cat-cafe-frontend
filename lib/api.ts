@@ -1,6 +1,6 @@
 import type { Reservation, Tea } from "./types.ts";
 
-const baseUrl = Deno.env.get("CAT_CAFE_API_URL") ?? "http://localhost:8080";
+const baseUrl = Deno.env.get("CAT_CAFE_API_URL") ?? "http://localhost:8444";
 const serviceToken = Deno.env.get("CAT_CAFE_API_TOKEN") ??
   "development-service-token";
 
