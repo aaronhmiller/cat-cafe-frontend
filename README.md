@@ -5,8 +5,9 @@ complimentary herbal tea, registering, and managing reservations.
 
 ```bash
 cp .env.example .env
-PORT=8443 deno task start
+PORT=8443 deno task --env-file=.env start
 ```
+Deno requires --env-file to load dotenv files into task commands.
 
 The backend is expected at `CAT_CAFE_API_URL` (default `http://localhost:8444`).
 Set `GOOGLE_CLIENT_ID` to the same Google web client ID configured by the
